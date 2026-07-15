@@ -29,6 +29,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - rucio-clients >=35.0.0
+    - httpx2 >= 2.0.0
     - mcp >=1.0
     - prometheus_client >=0.20
     - ca-policy-lcg  # for cert
