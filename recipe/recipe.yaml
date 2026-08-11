@@ -13,7 +13,7 @@ source:
   sha256: 5aeaae22a89ab3537969cd5c314a7e210d9bcabda2c64a1ee25dd8d0b1c815a5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -30,7 +30,7 @@ requirements:
     - python >=${{ python_min }}
     - rucio-clients >=35.0.0
     - httpx2 >=2.0.0
-    - mcp >=1.0
+    - mcp >=2.0.0,<3
     - prometheus_client >=0.20
     - ca-policy-lcg  # for cert
     - voms # for voms-client
