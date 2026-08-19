@@ -1,15 +1,15 @@
 schema_version: 1
 
 context:
-  version: "0.8.0"
+  version: "0.9.0"
 
 package:
   name: rucio-mcp
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/71/40/2c812371becf3dfee0a3597a9ecece680ec431a19d6d46eac27e1c3598f7/rucio_mcp-${{ version }}.tar.gz
-  sha256: 5aeaae22a89ab3537969cd5c314a7e210d9bcabda2c64a1ee25dd8d0b1c815a5
+  url: https://files.pythonhosted.org/packages/a4/3e/d8f011303cbecf33d175ece94e2c62da2963da46a37ddcbfe8c51a4f6101/rucio_mcp-${{ version }}.tar.gz
+  sha256: 899b45d0d2f1bb4a926d8376105546d2a29a831cbcf0336f94ad3f4403d3f785
 
 build:
   number: 1
@@ -35,6 +35,7 @@ requirements:
     - voms # for voms-client
     - voms-lsc # for voms-certs
     - __unix  # see https://github.com/rucio/rucio/issues/8461?reload=1
+    - af-credentials >=0.1.1
 
 tests:
   - python:
