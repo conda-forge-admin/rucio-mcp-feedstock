@@ -35,6 +35,7 @@ requirements:
     - voms # for voms-client
     - voms-lsc # for voms-certs
     - __unix  # see https://github.com/rucio/rucio/issues/8461?reload=1
+    - af-credentials >=0.1.1
 
 tests:
   - python:
