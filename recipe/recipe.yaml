@@ -1,15 +1,15 @@
 schema_version: 1
 
 context:
-  version: "0.9.0"
+  version: "0.9.1"
 
 package:
   name: rucio-mcp
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/a4/3e/d8f011303cbecf33d175ece94e2c62da2963da46a37ddcbfe8c51a4f6101/rucio_mcp-${{ version }}.tar.gz
-  sha256: 899b45d0d2f1bb4a926d8376105546d2a29a831cbcf0336f94ad3f4403d3f785
+  url: https://files.pythonhosted.org/packages/22/7f/5d6d122e91c2af51f6b0fac95b11891fdf4c790d0c55be2b88f90a6de900/rucio_mcp-${{ version }}.tar.gz
+  sha256: 9708f09c4b5c7622a6685db7256e01df8b5eb67974ef4b6e5669c112de35348b
 
 build:
   number: 1
